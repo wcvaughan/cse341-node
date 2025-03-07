@@ -1,0 +1,5 @@
+### Get all contacts from DB
+GET https://cse341-node-r7l4.onrender.com/contacts/
+
+### Get one contact from DB by _id
+GET https://cse341-node-r7l4.onrender.com/contacts/621fe1f527d68ebb24438398

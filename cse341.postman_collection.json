@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "f2111ad4-1505-4d71-8c90-d6abbf3c818a",
+		"name": "cse341",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41549689"
+	},
+	"item": [
+		{
+			"name": "https://cse341-node-r7l4.onrender.com/contacts/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cse341-node-r7l4.onrender.com/contacts/",
+					"protocol": "https",
+					"host": [
+						"cse341-node-r7l4",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"contacts",
+						""
+					]
+				},
+				"description": "get all contacts from db"
+			},
+			"response": []
+		},
+		{
+			"name": "https://cse341-node-r7l4.onrender.com/contacts/621fe1f527d68ebb24438398",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cse341-node-r7l4.onrender.com/contacts/621fe1f527d68ebb24438398",
+					"protocol": "https",
+					"host": [
+						"cse341-node-r7l4",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"contacts",
+						"621fe1f527d68ebb24438398"
+					]
+				},
+				"description": "get one contact from db by _id"
+			},
+			"response": []
+		}
+	]
+}
