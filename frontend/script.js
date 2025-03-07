@@ -6,11 +6,12 @@ async function apiFetch(url) {
   }
   
   const getData = async () => {
-    const data = await apiFetch('http://localhost:8080/professional');
+    const data = await apiFetch('http://localhost:8080/contacts');
     displayAllData(data);
   };
   
   function displayAllData(data) {
+    console.log("received data:", data);
     displayProfessionalName(data.professionalName);
     displayImage(data.base64Image);
     displayPrimaryDescription(data);
