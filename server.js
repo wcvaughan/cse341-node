@@ -22,6 +22,9 @@ app
     .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
     .use('/contacts', contactsRoutes);
 
+process.on('uncaughtException', (err, origin) => {
+    console.log(process.stderr.fd, `Caught exceptionL ${err}\n` + `Exception origin: ${origin}`);
+});
 
 mongodb.initDb((err, db) => {
     if(err) {
