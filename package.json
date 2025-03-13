@@ -2,41 +2,36 @@
   "name": "cse341-node",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+  "keywords": [],
+  "homepage": "https://github.com/wcvaughan/cse341-node#readme",
+  "bugs": {
+    "url": "https://github.com/wcvaughan/cse341-node/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wcvaughan/cse341-node.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/wcvaughan/cse341-node/issues"
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "homepage": "https://github.com/wcvaughan/cse341-node#readme",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongodb": "^6.14.2",
-    "nodemon": "^3.1.9",
+    "mongoose": "^8.12.1",
     "swagger-ui-express": "^5.0.1",
     "validatorjs": "^3.22.1"
   },
   "devDependencies": {
-    "eslint": "^9.22.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-prettier": "^5.2.3",
     "globals": "^16.0.0",
-    "prettier": "^3.5.3",
+    "nodemon": "^3.1.9",
     "swagger-autogen": "^2.23.7"
   }
 }
