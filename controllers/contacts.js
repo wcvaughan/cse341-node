@@ -7,7 +7,7 @@ const getAll = async (req, res) => {
     mongodb
         .getDatabase()
         .db()
-        .collection('Contacts2')
+        .collection('contacts2')
         .find()
         .toArray((err, lists) => {
             if (err) {
@@ -26,7 +26,7 @@ const getSingle = async (req, res) => {
     mongodb
         .getDatabase()
         .db()
-        .collection('Contacts2')
+        .collection('contacts2')
         .find({ _id: userId})
         .toArray((err, result) => {
             if (err) {

@@ -4,9 +4,15 @@ const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./db/connect');
 const contactsRoutes = require('./routes/contacts');
 const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json'); 
+const swaggerDocument = require('./swagger.json');
+const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
+
+app.use(cors({
+    origin: '*', // Or specify your frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
+}));
 
 app
     .use(bodyParser.json())
